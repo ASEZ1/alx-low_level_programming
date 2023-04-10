@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * _strncpy - copies a string
- * @dest is  destination.
- * @src is source.
- * @n is amount of bytes from src.
+ * @dest : is  destination.
+ * @src : is source.
+ * @n : is amount of bytes from src.
  * Return: the pointer to dest.
  */
 

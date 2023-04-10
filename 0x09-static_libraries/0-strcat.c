@@ -2,8 +2,8 @@
 
 /**
  * *_strcat - function commute srtings
- * @dest is param pointer to a char
- * @src is param pointer to a char
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
  * Return: return value of dest
  */
 
