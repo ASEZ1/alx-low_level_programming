@@ -1,28 +1,30 @@
 #include "main.h"
 
 /**
- * _strspn - gets the length of a prefix substring.
- * @s: is initial segment.
- * @accept: is accepted bytes.
- * Return: the number of accepted bytes.
+ * _strspn - locates a character in a string
+ * @s: is a pointer to the string to be searched
+ * @accept: is a pointer to a string containing the characters to search for
+ *
+ * Return: pointer to the first occurrence of the character c in the string s,
+ * or NULL if the character is not found
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, bool;
+	unsigned int i, j;
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		bool = 1;
-		for (j = 0; *(accept + j) != '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*(s + i) == *(accept + j))
+			if (s[i] == accept[j])
 			{
-				bool = 0;
 				break;
 			}
 		}
-		if (bool == 1)
-			break;
+		if (accept[j] == '\0')
+		{
+		return (i);
+		}
 	}
 	return (i);
 }

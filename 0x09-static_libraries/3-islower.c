@@ -1,13 +1,21 @@
 #include "main.h"
+#include <ctype.h>
+
 
 /**
- * _islower , prints 1 or 0 depending on input
- * @cn is the first parameter
- * Description: prints all letters lowercase
- * Return: Always(0).
- */
+ *_islower - finding the lowercase char
+ *
+ *@c: this is the value that it take
+ *
+ *Return: 1 or 0
+**/
 
 int _islower(int c)
 {
-	return (c >= 'a' && c <= 'z');
+	if (islower(c))
+	{
+		return (1);
+	}
+	else
+		return (0);
 }
